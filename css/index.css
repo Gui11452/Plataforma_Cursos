@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border-collapse: collapse;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html, body{
+    width: 100%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+@font-face{
+    font-family: bakemono-bold;
+    src: url(../fonts/Bakemono-Stereo-Bold-trial_1.woff);
+}
+
+@font-face{
+    font-family: bakemono-extra-bold;
+    src: url(../fonts/Bakemono-Stereo-Extrabold-trial_1.woff);
+}
+
+@font-face{
+    font-family: bakemono-extra-light;
+    src: url(../fonts/Bakemono-Stereo-Extralight-trial.woff);
+}
+
+@font-face{
+    font-family: bakemono-light;
+    src: url(../fonts/Bakemono-Stereo-Light-trial.woff);
+}
+
+@font-face{
+    font-family: bakemono-medium;
+    src: url(../fonts/Bakemono-Stereo-Medium-trial.woff);
+}
+
+@font-face{
+    font-family: bakemono-regular;
+    src: url(../fonts/Bakemono-Stereo-Regular-trial.woff);
+}
+
+@font-face{
+    font-family: bakemono-thin;
+    src: url(../fonts/Bakemono-Stereo-Thin-trial.woff);
+}
+
+@font-face{
+    font-family: manrope-light;
+    src: url(fonts/manrope-light.woff);
+}
+
+:root{
+    --cor-azul-educacao: #206eb9;
+    --cor-azul-tecnologia: #2de0b9;
+    --cor-laranja-humanizacao: #f79321;
+    --cor-amarelo-criatividade: #f9be40;
+    --cor-branca: #fff;
+    --cor-preto: black;
+    --fonte-oswald: 'Oswald', sans-serif;
+}
+
+a{
+    color: var(--cor-branca);
+}
+
+/* Cabecalho - Início */
+
+.cabecalho, .cabecalho-oculto{
+    width: 100%;
+    background: var(--cor-preto);
+    padding: 1rem 0;
+    z-index: 0;
+}
+
+.cabecalho-oculto{
+    display: none;
+    height: 12rem;
+    transition: all 0.2s;
+    overflow: hidden;
+}
+
+header.mostrar-cabecalho-oculto{
+    height: auto;
+    overflow: visible;
+}
+
+.cabecalho>div, .cabecalho-oculto>div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-oculto>div:nth-of-type(1){
+    margin: 0 auto 1rem auto;
+}
+
+.cabecalho>div img, .cabecalho-oculto>div img{
+    width: 10rem;
+}
+
+.cabecalho>div a, .cabecalho-oculto>div a{
+    font-size: 2.5rem;
+    font-family: bakemono-light;
+    /* font-family: var(--fonte-oswald); */
+    transition: all 0.2s;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.3rem;
+}
+
+.cabecalho>div nav>span, .cabecalho-oculto>div nav>span{
+    width: 0.2rem;
+    height: 3rem;
+    border-radius: 1rem;
+    display: inline-block;
+    background: var(--cor-branca);
+}
+
+.cabecalho>div a span, .cabecalho-oculto>div a span{
+    height: 0.2rem;
+    border-radius: 1rem;
+    width: 0%;
+    display: inline-block;
+    background: var(--cor-branca);
+    transition: all 0.5s;
+}
+
+.cabecalho>div a:hover, .cabecalho-oculto>div a:hover{
+    transform: scale(1.1);
+}
+
+.cabecalho>div a:hover span, .cabecalho-oculto>div a:hover span{
+    width: 100%;
+}
+
+.cabecalho>div nav, .cabecalho-oculto>div nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cabecalho-oculto>div nav{
+    width: 100%;
+}
+
+.botao{
+    border: 0.2rem solid var(--cor-branca);
+    border-radius: 1rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.botao:hover{
+    transform: scale(1.1);
+}
+
+.botao span{
+    width: 3.5rem;
+    height: 0.3rem;
+    background: var(--cor-branca);
+    border-radius: 1rem;
+    transition: all 0.2s;
+}
+
+.botao span.span-um{
+    transform: rotate(45deg) translate(1rem, 0.8rem);
+}
+
+.botao span.span-dois{
+    transform: translateX(20rem);
+    opacity: 0;
+}
+
+.botao span.span-tres{
+    transform: rotate(-45deg) translate(0.8rem, -1rem);
+}
+
+.dropdown{
+    color: var(--cor-branca);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    height: 3rem;
+    font-size: 2.5rem;
+    font-family: bakemono-light;
+    position: relative;
+}
+
+.dropdown div{
+    flex-flow: column nowrap;
+    gap: 2rem;
+    font-size: 1rem;
+    width: 20rem;
+    text-align: center;
+    background: var(--cor-preto);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 3rem;
+    left: -6rem;
+    display: none;
+    z-index: 10000000;
+}
+
+div.dropdown div.dropdown-mostrar{
+    display: flex;
+}
+
+.dropdown p{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown p img{
+    width: 2rem;
+}
+
+/* Cabecalho - Fim */
+
+/* Container Home - Início */
+
+.container-home{
+    width: 100%;
+    min-height: 90vh;
+    background: url('../images/fundo.jpg');
+    background-size: cover;
+}
+
+.container-home>div{
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-home>div>div{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    max-width: 60rem;
+    border-radius: 1rem;
+    color: var(--cor-branca);
+    font-family: bakemono-medium;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4rem;
+}
+
+.container-home h1{
+    font-size: 4rem;
+}
+
+.container-home p{
+    font-size: 2rem;
+}
+
+.container-home img{
+    width: 50%;
+}
+
+.container-home a, .container-home span{
+    background: var(--cor-laranja-humanizacao);
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    width: 60%;
+    text-align: center;
+}
+
+.container-home a:hover{
+    transform: scale(1.05);
+}
+
+/* Container Home - Fim */
+
+
+/* Container Banner - Início */
+
+.container-banner{
+    width: 100%;
+}
+
+.container-banner img{
+    width: 100%;
+}
+
+/* Container Banner - Fim */
+
+/* Container Sobre Mim - Início */
+
+.container-sobre-mim{
+    width: 100%;
+    background: var(--cor-azul-educacao);
+}
+
+.container-sobre-mim>div{
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    font-family: bakemono-medium;
+}
+
+.container-sobre-mim img{
+    width: 30%;
+}
+
+.container-sobre-mim h1{
+    font-size: 4rem;
+}
+
+.container-sobre-mim p{
+    font-size: 2.5rem;
+}
+
+.container-sobre-mim span{
+    font-family: manrope-light;
+}
+
+.container-sobre-mim>div>div{
+    max-width: 60rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 2rem;
+    flex-flow: column nowrap;
+    color: var(--cor-branca);
+}
+
+
+/* Container Sobre Mim - Fim */
+
+/* Container Cursos - Início */
+
+.container-cursos{
+    width: 100%;
+    background: var(--cor-preto);
+}
+
+.container-cursos>div{
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+    color: var(--cor-branca);
+}
+
+.container-cursos h1{
+    font-family: bakemono-medium;
+    font-size: 6rem;
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 2rem rgb(255, 255, 255);
+}
+
+.cursos{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.curso img{
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.curso img:hover{
+    transform: scale(1.05);
+}
+
+.curso p{
+    font-family: bakemono-medium;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.curso{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+    max-width: 30rem;
+}
+
+.acessar-curso{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background: var(--cor-laranja-humanizacao);
+    font-family: bakemono-bold;
+    box-shadow: 0 0.6rem 2.4rem 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+    transition: all 0.2s;
+}
+
+.acessar-curso:hover{
+    transform: scale(1.04);
+    color: var(--cor-preto);
+}
+
+.acessar-curso::after{
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: var(--cor-azul-educacao);
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+}
+
+.acessar-curso:hover::after{
+    right: auto;
+    left: 0;
+    width: 100%;
+    color: var(--cor-preto);
+}
+
+.acessar-curso span{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: var(--cor-branca);
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+
+.acessar-curso:hover span{
+    color: var(--cor-preto);
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Container Cursos - Início */
+
+/* Container Contatos - Início */
+
+.container-contatos{
+    width: 100%;
+    background: var(--cor-amarelo-criatividade);
+}
+
+.container-contatos>div{
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+.container-contatos h1{
+    font-family: bakemono-medium;
+    font-size: 6rem;
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 2rem rgb(12, 12, 12);
+}
+
+.container-contatos h2{
+    font-family: bakemono-medium;
+    font-size: 4rem;
+}
+
+.container-contatos p{
+    font-family: bakemono-medium;
+    font-size: 2rem;
+}
+
+.container-contatos em{
+    font-family: bakemono-medium;
+    font-size: 1.5rem;
+}
+
+.contatos{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato a{
+    transition: all 0.2s;
+}
+
+.contato a:hover{
+    transform: scale(1.1);
+}
+
+.contato{
+    max-width: 30rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.6rem;
+}
+
+.container-contatos img{
+    width: 10rem;
+}
+
+.contato-button{
+    font-family: monospace;
+    background-color: var(--cor-azul-tecnologia);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem;
+    transition: all 0.3s;
+    text-align: center;
+  }
+  
+a.contato-button:hover{
+    background-color: var(--cor-azul-educacao);
+    box-shadow: 0 0 0 0.5rem var(--cor-azul-educacao);
+    transform: scale(1.03);
+  }
+
+/* Container Contatos - Fim */
+
+/* Rodapé - Início */
+
+.rodape{
+    width: 100%;
+    background: var(--cor-preto);
+    padding: 2rem 0;
+    font-family: bakemono-regular;
+    color: var(--cor-branca);
+    font-size: 1.5rem;
+}
+
+.rodape>div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape span{
+    font-family: manrope-light;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.links a{
+    font-family: bakemono-regular;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.links a:hover{
+    transform: scale(1.05);
+}
+
+.rodape>div a{
+    transition: all 0.2s;
+}
+
+.rodape>div a:hover{
+    transform: scale(1.1);
+}
+
+.rodape>div img{
+    width: 10rem;
+}
+
+/* Rodapé - Fim */
+
+
+@media (max-width: 850px) and (min-width: 550px){
+
+    .cabecalho{
+        display: none;
+    }
+
+    .cabecalho-oculto{
+        display: block;
+    }
+
+    .container-home img, .container-sobre-mim img{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 549.98px){
+
+    .cabecalho>div nav>span, .cabecalho-oculto>div nav>span{
+        display: none;
+    }
+
+    html{
+        font-size: 55%;
+    }
+
+    .cabecalho{
+        display: none;
+    }
+
+    .cabecalho-oculto{
+        display: block;
+    }
+
+    .cabecalho-oculto>div nav{
+        flex-flow: column nowrap;
+    }
+
+    .rodape>div{
+        flex-flow: column nowrap;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .container-home img, .container-sobre-mim img{
+        width: 100%;
+    }
+
+}

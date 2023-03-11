@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/formularios.css">
+    <title> Interacting with WebElements </title>
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <a href=".container-home"> 
+                    Home 
+                    <span></span>
+                </a>
+                <span></span>
+                <a href=".container-sobre-mim"> 
+                    Sobre mim 
+                    <span></span>
+                </a>
+                <span></span>
+                <a href=".container-cursos"> 
+                    Cursos 
+                    <span></span>
+                </a>
+                <span></span>
+                <a href=".container-contatos"> 
+                    Contatos 
+                    <span></span>
+                </a>
+                <span></span>
+                <div class="dropdown">
+                    <p>
+                        Demo
+                        <img src="images/arrow.png" alt=""> 
+                    </p>
+                    <div>
+                        <a href="InteractingWithWebElements.html"> Interacting with WebElements </a>
+                        <a href="SelectorTypes.html"> Selector Types </a>
+                        <a href="RegistrationForm.html"> Registration Form </a>
+                        <a href="gettingToKnowYouBetter.html"> Getting to know you better </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <header class="cabecalho-oculto">
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <div class="botao">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div>
+            <nav>
+                <a href=".container-home"> 
+                    Home 
+                    <span></span>
+                </a>
+                <span></span>
+                <a href=".container-sobre-mim"> 
+                    Sobre mim 
+                    <span></span>
+                </a>
+                <span></span>
+                <a href=".container-cursos"> 
+                    Cursos 
+                    <span></span>
+                </a>
+                <span></span>
+                <a href=".container-contatos"> 
+                    Contatos 
+                    <span></span>
+                </a>
+                <span></span>
+                <div class="dropdown">
+                    <p>
+                        Demo
+                        <img src="images/arrow.png" alt=""> 
+                    </p>
+                    <div>
+                        <a href="InteractingWithWebElements.html"> Interacting with WebElements </a>
+                        <a href="SelectorTypes.html"> Selector Types </a>
+                        <a href="RegistrationForm.html"> Registration Form </a>
+                        <a href="gettingToKnowYouBetter.html"> Getting to know you better </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div>
+            <div class="formulario">
+                <h1>
+                    Interacting with WebElements
+                </h1>
+
+                <form action="" method="">
+                    
+                    <h2> Textboxes </h2>
+
+                    <div>
+                        <label for="name">
+                            Name
+                        </label>
+                        <input type="text" id="name" name="name" placeholder="Full name">
+                        <label for="email">
+                            Email
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="name@gmail.com">
+                        <label for="courses">
+                            Courses you would like to purchase
+                        </label>
+                        <textarea type="text" id="courses" name="courses" placeholder="Type courses here"></textarea>
+                    </div> 
+
+                    <h2> Buttons, Alerts, Radio buttons, Checkboxes </h2>
+
+                    <div class="buttons-alerts">
+                        <button class="button"> Button! </button>
+                        <p class="button-paragrafo">  </p>
+                        <button class="alert"> Alert! </button>
+                    </div> 
+
+                    <div>
+                        <label for="experience">
+                            Do you have any previous IT experience?
+                        </label>
+                        <div class="input-radio">
+                            <input type="radio" id="experience" name="experience" value="Yes"> Yes
+                        </div>
+                        <div class="input-radio">
+                            <input type="radio" id="experience" name="experience" value="No"> No
+                        </div>
+                        <div class="input-radio">
+                            <input type="radio" id="experience" name="experience" value="not_applicable"> Not applicable
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="language">
+                            What language you like the most?
+                        </label>
+                        <div class="input-radio">
+                            <input type="radio" id="language" name="language" value="html"> HTML
+                        </div>
+                        <div class="input-radio">
+                            <input type="radio" id="language" name="language" value="css"> CSS
+                        </div>
+                        <div class="input-radio">
+                            <input type="radio" id="language" name="language" value="c#"> C#
+                        </div>
+                    </div>
+                    
+                    <h2> Dropdown </h2>
+
+                    <div>
+                        <label for="upskill">
+                            Choose your next course at Upskillit:
+                        </label>
+                    </div>
+
+                    <div class="select-options">
+                        <select name="upskill" id="upskill">
+                            <option>-- Select --</option>
+                            <option id="c#_intermediate" value="C# Intermediate">C# Intermediate</option>
+                            <option id="c#_advanced" value="C# Advanced">C# Advanced</option>
+                            <option id="java_beginner" value="Java Beginner">Java Beginner</option>
+                            <option id="java_intermediate" value="Java Intermediate">Java Intermediate</option>
+                            <option id="java_advanced" value="Java Advanced">Java Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="input-submit">
+                        <input type="submit" value="Enviar">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <div class="links">
+                <h1> Links </h1>
+                <a href="https://br.freepik.com/vetores-gratis/
+                grafico-3d-da-terra-que-simboliza-a-ilustracao-do-
+                comercio-global_14803715.htm#page=2&query=tecnologi&
+                position=22&from_view=search&track=sph">Imagem de 
+                liuzishan no Freepik 
+            </a>
+            </div>
+            <p> © <span> 2023 </span> UpSkill IT - Todos os direitos reservados. </p>
+        </div>
+    </footer>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

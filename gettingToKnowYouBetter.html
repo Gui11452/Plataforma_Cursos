@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/formularios.css">
+    <title> Getting to know you better </title>
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <a href=".container-home"> 
+                    Home 
+                    <span></span>
+                </a>
+                <span></span>
+                <a href=".container-sobre-mim"> 
+                    Sobre mim 
+                    <span></span>
+                </a>
+                <span></span>
+                <a href=".container-cursos"> 
+                    Cursos 
+                    <span></span>
+                </a>
+                <span></span>
+                <a href=".container-contatos"> 
+                    Contatos 
+                    <span></span>
+                </a>
+                <span></span>
+                <div class="dropdown">
+                    <p>
+                        Demo
+                        <img src="images/arrow.png" alt=""> 
+                    </p>
+                    <div>
+                        <a href="InteractingWithWebElements.html"> Interacting with WebElements </a>
+                        <a href="SelectorTypes.html"> Selector Types </a>
+                        <a href="RegistrationForm.html"> Registration Form </a>
+                        <a href="gettingToKnowYouBetter.html"> Getting to know you better </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <header class="cabecalho-oculto">
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <div class="botao">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div>
+            <nav>
+                <a href=".container-home"> 
+                    Home 
+                    <span></span>
+                </a>
+                <span></span>
+                <a href=".container-sobre-mim"> 
+                    Sobre mim 
+                    <span></span>
+                </a>
+                <span></span>
+                <a href=".container-cursos"> 
+                    Cursos 
+                    <span></span>
+                </a>
+                <span></span>
+                <a href=".container-contatos"> 
+                    Contatos 
+                    <span></span>
+                </a>
+                <span></span>
+                <div class="dropdown">
+                    <p>
+                        Demo
+                        <img src="images/arrow.png" alt=""> 
+                    </p>
+                    <div>
+                        <a href="InteractingWithWebElements.html"> Interacting with WebElements </a>
+                        <a href="SelectorTypes.html"> Selector Types </a>
+                        <a href="RegistrationForm.html"> Registration Form </a>
+                        <a href="gettingToKnowYouBetter.html"> Getting to know you better </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div>
+            <div class="formulario">
+                <h1>
+                    Getting to know you better
+                </h1>
+
+                <form action="" method="">
+
+                    <div>
+                        <label for="food">
+                            <span>1.</span> What type of food you like to eat?
+                        </label>
+                        <input type="text" id="food" name="food" placeholder="Food type">
+                    </div>
+
+                    <div>
+                        <label for="dish">
+                            <span>2.</span> What is your favourite dish?
+                        </label>
+                        <input type="text" id="dish" name="dish" placeholder="Favourite dish">
+                    </div>
+
+                    <div>
+                        <label for="dietary">
+                            <span>3.</span> Do you have any dietary requirements?
+                        </label>
+                        <div class="input-radio">
+                            <input type="radio" id="dietary" name="dietary" value="Yes">
+                            Yes
+                        </div>
+                        <div class="input-radio">
+                            <input type="radio" id="dietary" name="dietary" value="No">
+                            No
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="allergies">
+                            <span>4.</span> Do you have any allergies? If so, please add them in the field below:
+                        </label>
+                        <input type="text" id="allergies" name="allergies" placeholder="Allergies">
+                    </div>
+
+                    <div>
+                        <label for="interests">
+                            <span>5.</span> Do you have any allergies? If so, please add them in the field below:
+                        </label>
+                        <div class="input-checkbox">
+                            <div>
+                                <input type="checkbox" id="interests" name="interests" value="music"> Music
+                            </div>
+                            <div>
+                                <input type="checkbox" id="interests" name="interests" value="software_testing"> Software testing
+                            </div>
+                            <div>
+                                <input type="checkbox" id="interests" name="interests" value="sports"> Sports
+                            </div>
+                            <div>
+                                <input type="checkbox" id="interests" name="interests" value="outdoor_activities"> Outdoor activities
+                            </div>
+                            <div>
+                                <input type="checkbox" id="interests" name="interests" value="tv_shows"> Tv shows
+                            </div>
+                            <div>
+                                <input type="checkbox" id="interests" name="interests" value="many_more"> Many more!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="collection">
+                            <span>6.</span> Do you collect anything? If so, list the items in the field below:
+                        </label>
+                        <input type="text" id="collection" name="collection" placeholder="Collection">
+                    </div>
+
+                    <div>
+                        <label for="biggest">
+                            <span>7.</span> Who is your biggest idol?
+                        </label>
+                        <input type="text" id="biggest" name="biggest" placeholder="Biggest">
+                    </div>
+
+                    <div>
+                        <label for="color">
+                            <span>8.</span> What is your favourite colour?
+                        </label>
+                        <input type="text" id="color" name="color" placeholder="Favourite color">
+                    </div>
+
+                    <div>
+                        <label for="comments">
+                            <span>9.</span> Any other comments you would like to add?
+                        </label>
+                        <textarea type="text" id="comments" name="comments" placeholder="Type any additional comments here"></textarea>
+                    </div>
+                    
+                    <div class="input-submit">
+                        <input type="submit" value="Enviar">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <div class="links">
+                <h1> Links </h1>
+                <a href="https://br.freepik.com/vetores-gratis/
+                grafico-3d-da-terra-que-simboliza-a-ilustracao-do-
+                comercio-global_14803715.htm#page=2&query=tecnologi&
+                position=22&from_view=search&track=sph">Imagem de 
+                liuzishan no Freepik 
+            </a>
+            </div>
+            <p> © <span> 2023 </span> UpSkill IT - Todos os direitos reservados. </p>
+        </div>
+    </footer>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
