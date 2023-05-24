@@ -540,6 +540,7 @@ div.dropdown div.dropdown-mostrar{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
     gap: 2rem;
     border: 0.2rem solid var(--cor-preto);
 }
