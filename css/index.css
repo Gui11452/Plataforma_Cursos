@@ -448,6 +448,76 @@ div.dropdown div.dropdown-mostrar{
 
 /* Container Cursos - Início */
 
+/* Container Feedbacks - Início */
+
+.container-feedbacks{
+    width: 100%;
+    padding: 3rem 0;
+    background: var(--cor-amarelo-criatividade);
+}
+
+.container-feedbacks>div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.container-feedbacks h1{
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: 0.2rem 0.2rem 2rem black;
+}
+
+.feedbacks{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.feedback{
+    border-radius: 0.5rem;
+    max-width: 40rem;
+    background: black;
+    color: var(--cor-amarelo-criatividade);
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.feedback>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.feedback-imagem{
+    border-radius: 50%;
+    width: 7rem;
+    border: 0.4rem solid var(--cor-amarelo-criatividade);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-imagem img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Container Feedbacks - Fim */
+
 /* Container Contatos - Início */
 
 .container-contatos{
@@ -461,7 +531,52 @@ div.dropdown div.dropdown-mostrar{
     padding: 3rem 0;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     gap: 3rem;
+}
+
+.container-contatos>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 0.2rem solid var(--cor-preto);
+}
+
+.contatos{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--cor-preto);
+}
+
+.contatos>div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contatos>div:last-child{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contatos a{
+    color: var(--cor-preto);
+    transition: .3s;
+    font-size: 2rem;
+}
+
+.contatos a:hover{
+    transform: scale(1.05);
 }
 
 .container-contatos h1{
@@ -470,63 +585,62 @@ div.dropdown div.dropdown-mostrar{
     text-shadow: 0.2rem 0.2rem 2rem rgb(12, 12, 12);
 }
 
-.container-contatos h2{
-    font-size: 4rem;
-}
-
-.container-contatos p{
-    font-size: 2rem;
-}
-
-.container-contatos em{
-    font-size: 1.5rem;
-}
-
-.contatos{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 4rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.contato a{
-    transition: all 0.2s;
-}
-
-.contato a:hover{
-    transform: scale(1.1);
-}
-
-.contato{
-    max-width: 30rem;
-    text-align: center;
+.contatos-form{
+    border-radius: 0.5rem;
+    padding: 3rem;
     display: flex;
     flex-flow: column nowrap;
-    gap: 0.6rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
-.container-contatos img{
-    width: 10rem;
-}
-
-.contato-button{
-    background-color: var(--cor-azul-tecnologia);
-    color: var(--cor-branca);
-    border: none;
-    border-radius: 1rem;
+.contatos-form>div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
     width: 100%;
+}
+
+.contatos-form input{
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 0.2rem solid var(--cor-preto);
+}
+
+.contatos-form>input{
+    border-radius: 1rem;
     padding: 1rem;
-    transition: all 0.3s;
-    text-align: center;
-  }
-  
-a.contato-button:hover{
-    background-color: var(--cor-azul-educacao);
-    box-shadow: 0 0 0 0.5rem var(--cor-azul-educacao);
-    transform: scale(1.03);
-  }
+    background: var(--cor-preto);
+    color: var(--cor-amarelo-criatividade);
+    font-weight: bold;
+    font-size: 1.6rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.contatos-form>input:hover{
+    transform: scale(1.05);
+}
+
+.contatos-form textarea{
+    resize: none;
+    border: 0.2rem solid var(--cor-preto);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    width: 100%;
+}
+
+.contatos-form input::placeholder{
+    color: var(--cor-preto);
+}
+
+
 
 /* Container Contatos - Fim */
 
@@ -659,6 +773,29 @@ a.contato-button:hover{
 
     .container-home img, .container-sobre-mim img{
         width: 100%;
+    }
+
+}
+
+@media (max-width: 400px){
+    html{
+        font-size: 45%;
+    }
+
+    .container-contatos>div>div{
+        flex-flow: column nowrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contatos{
+        padding: 0 0 2rem 0;
+        align-items: center;
+    }
+    
+    .contatos>div{
+        align-items: center;
     }
 
 }

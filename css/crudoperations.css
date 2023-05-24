@@ -109,6 +109,11 @@ header.mostrar-cabecalho-oculto {
     transform: scale(1.1);
 }
 
+.cabecalho a{
+    text-decoration: none !important;
+    color: var(--cor-branca) !important;
+}
+
 .cabecalho>div a:hover span,
 .cabecalho-oculto>div a:hover span {
     width: 100%;
@@ -214,143 +219,124 @@ div.dropdown div.dropdown-mostrar {
 
 /* Container - Início */
 
-.container {
-    width: 100%;
-    background: url('../images/fundo.jpg');
-    background-size: cover;
-    padding: 3rem 0;
-}
-
-.container>div {
-    margin: 0 auto;
-    width: 90%;
+main{
+    min-height: 90vh;
     display: flex;
+    background: url('../images/fundo.jpg');
     justify-content: center;
     align-items: center;
 }
 
-label {
-    display: block;
-    width: 100%;
-    font-size: 1.8rem;
-}
-
-.formulario {
-    background: rgba(0, 0, 0, 0.7);
-    color: var(--cor-branca);
-    padding: 1.5rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 2rem;
-}
-
-.formulario h1 {
-    font-size: 4rem;
-}
-
-.formulario h2 {
-    font-size: 3rem;
-}
-
-.formulario form {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 2rem;
-}
-
-.formulario form textarea {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.6rem;
-    border-radius: 0.5rem;
-    resize: none;
-    min-height: 15rem;
-}
-
-.formulario form>div {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 2rem;
-}
-
-.formulario form>div.buttons-alerts {
-    gap: 1rem;
-}
-
-.formulario form>div.buttons-alerts button {
-    width: 8rem;
-    padding: 1rem;
-    border-radius: 1rem;
+.table-wrapper {
+    width: 70rem;
+    margin: 3rem auto;
     background: var(--cor-amarelo-criatividade);
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.2s;
+    padding: 2rem;
 }
 
-.formulario form>div.buttons-alerts p {
-    font-size: 2rem;
-}
-
-.formulario form>div.buttons-alerts button:hover {
-    transform: scale(1.1);
-}
-
-.formulario input {
-    width: 100%;
-    border-radius: 1rem;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border: 0.2rem solid #ccc;
-    transition: all 0.2s;
-}
-
-.formulario input:focus {
-    transform: scale(1.01);
-    border: 0.2rem solid cyan;
-}
-
-.input-radio {
-    font-size: 1.6rem;
-    display: flex;
-    gap: 2rem;
-}
-
-.input-radio input {
-    width: 2rem;
-}
-
-.input-checkbox {
-    display: flex;
-    flex-flow: column nowrap;
-    font-size: 1.6rem;
-}
-
-.input-checkbox input {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-.input-submit input {
-    padding: 1rem;
-    border-radius: 1rem;
-    transition: all 0.2s;
-    cursor: pointer;
-}
-
-.form-submited{
-    font-size: 2rem;
-}
-
-.input-submit input:hover {
-    transform: scale(1.01);
-}
-
-.select-options select {
-    width: 18rem;
+.table-wrapper>p{
     text-align: center;
-    padding: 1rem;
-    border-radius: 1rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.table-title {
+    padding-bottom: 1rem;
+    margin: 0 0 1rem;
+}
+
+.table-title h2 {
+    margin: 0.6rem 0 0;
+    font-size: 2.2rem;
+}
+
+.table-title .add-new {
+    float: right;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: none;
+    min-width: 10rem;
+    border-radius: 5rem;
+    line-height: 1.3rem;
+    background: var(--cor-preto);
+    border: 0.2rem solid var(--cor-preto);
+}
+
+.container input{
+    font-size: 1.5rem !important;
+}
+
+.container input::placeholder{
+    font-size: 1.5rem !important;
+}
+
+.table-title .add-new i {
+    margin-right: 0.4rem;
+}
+
+table.table {
+    table-layout: fixed;
+}
+
+table.table tr th, table.table tr td {
+    border: 0.2rem solid var(--cor-preto) !important;
+}
+
+table.table th i {
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+table.table th:last-child {
+    width: 10rem;
+}
+
+table.table td a {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0.5rem;
+    min-width: 2.4rem;
+}
+
+table.table td a.add {
+    color: #27C46B;
+}
+
+table.table td a.edit {
+    color: var(--cor-preto);
+}
+
+table.table td a.delete {
+    color: #E34724;
+}
+
+table.table td i {
+    font-size: 1.9rem;
+}
+
+table.table td a.add i {
+    font-size: 2.4rem;
+    margin-right: -0.1rem;
+    position: relative;
+    top: 0.3rem;
+}
+
+table.table .form-control {
+    height: 3.2rem;
+    line-height: 3.2rem;
+    box-shadow: none;
+    border-radius: 0.2rem;
+}
+
+table.table .form-control.error {
+    border-color: #f50000;
+}
+
+table.table td .add {
+    display: none;
 }
 
 /* Container - Fim */
@@ -418,7 +404,13 @@ label {
 
 }
 
-@media (max-width: 549.98px) {
+@media (max-width: 770px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 600px) {
 
     .cabecalho>div nav>span,
     .cabecalho-oculto>div nav>span {
@@ -426,7 +418,7 @@ label {
     }
 
     html {
-        font-size: 55%;
+        font-size: 35%;
     }
 
     .cabecalho {
@@ -447,9 +439,10 @@ label {
         text-align: center;
     }
 
-    .container-home img,
-    .container-sobre-mim img {
-        width: 100%;
-    }
+}
 
+@media (max-width: 440px) {
+    html {
+        font-size: 20%;
+    }
 }

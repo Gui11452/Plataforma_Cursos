@@ -33,7 +33,9 @@
         }
         if(el == button){
             e.preventDefault();
-            buttonP.innerHTML = 'Button successfully clicked!';
+            setTimeout(function(){
+                buttonP.innerHTML = 'Button successfully clicked!';
+            }, 2000);
         }
         if(el == alerta){
             e.preventDefault();
@@ -54,7 +56,9 @@
         }
         if(el == inputFormSubmited){
             e.preventDefault();
-            formSubmitedP.innerHTML = 'Form submitted';
+            setTimeout(function(){
+                formSubmitedP.innerHTML = 'Form submitted';
+            }, 2000);
         }
 
     })
