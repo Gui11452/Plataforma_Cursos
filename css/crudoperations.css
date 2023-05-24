@@ -76,6 +76,11 @@ header.mostrar-cabecalho-oculto {
     width: 10rem;
 }
 
+.cabecalho a{
+    text-decoration: none !important;
+    color: var(--cor-branca) !important;
+}
+
 .cabecalho>div a,
 .cabecalho-oculto>div a {
     font-size: 2.5rem;
@@ -109,7 +114,7 @@ header.mostrar-cabecalho-oculto {
     transform: scale(1.1);
 }
 
-.cabecalho a{
+.cabecalho a, .cabecalho-oculto a{
     text-decoration: none !important;
     color: var(--cor-branca) !important;
 }
@@ -133,7 +138,6 @@ header.mostrar-cabecalho-oculto {
 }
 
 .botao {
-    border: 0.2rem solid var(--cor-branca);
     border-radius: 1rem;
     width: 5rem;
     height: 5rem;

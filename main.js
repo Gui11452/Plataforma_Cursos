@@ -1,9 +1,5 @@
 (function(){
 
-    const botao = document.querySelector('.botao');
-    const botaoSpan = document.querySelectorAll('.botao span');
-    const [span1, span2, span3] = botaoSpan;
-    const cabecalhoOculto = document.querySelector('.cabecalho-oculto');
     const button = document.querySelector('.button');
     const alerta = document.querySelector('.alert');
     const buttonP = document.querySelector('.button-paragrafo');
@@ -24,13 +20,7 @@
     document.addEventListener('click', e => {
 
         const el = e.target;
-        
-        if(el === botao || el === span1 || el === span2 || el === span3){
-            span1.classList.toggle('span-um');
-            span2.classList.toggle('span-dois');
-            span3.classList.toggle('span-tres');
-            cabecalhoOculto.classList.toggle('mostrar-cabecalho-oculto');
-        }
+    
         if(el == button){
             e.preventDefault();
             setTimeout(function(){

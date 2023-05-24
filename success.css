@@ -114,6 +114,11 @@ header.mostrar-cabecalho-oculto {
     width: 100%;
 }
 
+.cabecalho a, .cabecalho-oculto a{
+    text-decoration: none !important;
+    color: var(--cor-branca) !important;
+}
+
 .cabecalho>div nav,
 .cabecalho-oculto>div nav {
     display: flex;
@@ -128,7 +133,6 @@ header.mostrar-cabecalho-oculto {
 }
 
 .botao {
-    border: 0.2rem solid var(--cor-branca);
     border-radius: 1rem;
     width: 5rem;
     height: 5rem;
