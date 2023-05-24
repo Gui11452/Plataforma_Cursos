@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
     margin: 0;
@@ -12,6 +12,7 @@
 
 html{
     font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
 }
 
 html, body{
@@ -19,47 +20,7 @@ html, body{
 }
 
 body{
-    font-size: 1.6rem;
-}
-
-@font-face{
-    font-family: bakemono-bold;
-    src: url(../fonts/Bakemono-Stereo-Bold-trial_1.woff);
-}
-
-@font-face{
-    font-family: bakemono-extra-bold;
-    src: url(../fonts/Bakemono-Stereo-Extrabold-trial_1.woff);
-}
-
-@font-face{
-    font-family: bakemono-extra-light;
-    src: url(../fonts/Bakemono-Stereo-Extralight-trial.woff);
-}
-
-@font-face{
-    font-family: bakemono-light;
-    src: url(../fonts/Bakemono-Stereo-Light-trial.woff);
-}
-
-@font-face{
-    font-family: bakemono-medium;
-    src: url(../fonts/Bakemono-Stereo-Medium-trial.woff);
-}
-
-@font-face{
-    font-family: bakemono-regular;
-    src: url(../fonts/Bakemono-Stereo-Regular-trial.woff);
-}
-
-@font-face{
-    font-family: bakemono-thin;
-    src: url(../fonts/Bakemono-Stereo-Thin-trial.woff);
-}
-
-@font-face{
-    font-family: manrope-light;
-    src: url(fonts/manrope-light.woff);
+    font-size: 1.5rem;
 }
 
 :root{
@@ -69,7 +30,6 @@ body{
     --cor-amarelo-criatividade: #f9be40;
     --cor-branca: #fff;
     --cor-preto: black;
-    --fonte-oswald: 'Oswald', sans-serif;
 }
 
 a{
@@ -115,8 +75,6 @@ header.mostrar-cabecalho-oculto{
 
 .cabecalho>div a, .cabecalho-oculto>div a{
     font-size: 2.5rem;
-    font-family: bakemono-light;
-    /* font-family: var(--fonte-oswald); */
     transition: all 0.2s;
     display: flex;
     flex-flow: column nowrap;
@@ -161,7 +119,6 @@ header.mostrar-cabecalho-oculto{
 }
 
 .botao{
-    border: 0.2rem solid var(--cor-branca);
     border-radius: 1rem;
     width: 5rem;
     height: 5rem;
@@ -204,9 +161,8 @@ header.mostrar-cabecalho-oculto{
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
-    height: 3rem;
+    height: 4rem;
     font-size: 2.5rem;
-    font-family: bakemono-light;
     position: relative;
 }
 
@@ -248,13 +204,13 @@ div.dropdown div.dropdown-mostrar{
 
 .container-home{
     width: 100%;
-    min-height: 90vh;
     background: url('../images/fundo.jpg');
     background-size: cover;
 }
 
 .container-home>div{
     width: 90%;
+    min-height: 90vh;
     margin: 0 auto;
     padding: 3rem 0;
     display: flex;
@@ -267,10 +223,10 @@ div.dropdown div.dropdown-mostrar{
 .container-home>div>div{
     background: rgba(0, 0, 0, 0.7);
     padding: 1rem;
-    max-width: 60rem;
+    max-width: 80rem;
+    font-size: 2rem;
     border-radius: 1rem;
     color: var(--cor-branca);
-    font-family: bakemono-medium;
     display: flex;
     flex-flow: column nowrap;
     gap: 4rem;
@@ -285,7 +241,7 @@ div.dropdown div.dropdown-mostrar{
 }
 
 .container-home img{
-    width: 50%;
+    width: 30%;
 }
 
 .container-home a, .container-home span{
@@ -303,24 +259,11 @@ div.dropdown div.dropdown-mostrar{
 
 /* Container Home - Fim */
 
-
-/* Container Banner - Início */
-
-.container-banner{
-    width: 100%;
-}
-
-.container-banner img{
-    width: 100%;
-}
-
-/* Container Banner - Fim */
-
 /* Container Sobre Mim - Início */
 
 .container-sobre-mim{
     width: 100%;
-    background: var(--cor-azul-educacao);
+    background: var(--cor-preto);
 }
 
 .container-sobre-mim>div{
@@ -332,24 +275,26 @@ div.dropdown div.dropdown-mostrar{
     gap: 5rem;
     justify-content: center;
     align-items: center;
-    font-family: bakemono-medium;
 }
 
-.container-sobre-mim img{
-    width: 30%;
+.imagem-sobre-mim{
+    width: 30rem;
+    border-radius: 50% !important;
+    border: 0.4rem solid var(--cor-amarelo-criatividade);
+}
+
+.imagem-sobre-mim img{
+    width: 100% !important;
+    border-radius: 50% !important;
 }
 
 .container-sobre-mim h1{
     font-size: 4rem;
 }
 
-.container-sobre-mim p{
+/* .container-sobre-mim p{
     font-size: 2.5rem;
-}
-
-.container-sobre-mim span{
-    font-family: manrope-light;
-}
+} */
 
 .container-sobre-mim>div>div{
     max-width: 60rem;
@@ -382,7 +327,6 @@ div.dropdown div.dropdown-mostrar{
 }
 
 .container-cursos h1{
-    font-family: bakemono-medium;
     font-size: 6rem;
     text-align: center;
     text-shadow: 0.2rem 0.2rem 2rem rgb(255, 255, 255);
@@ -407,7 +351,6 @@ div.dropdown div.dropdown-mostrar{
 }
 
 .curso p{
-    font-family: bakemono-medium;
     font-size: 1.6rem;
     text-align: center;
 }
@@ -415,8 +358,25 @@ div.dropdown div.dropdown-mostrar{
 .curso{
     display: flex;
     flex-flow: column nowrap;
-    gap: 3rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
     max-width: 30rem;
+}
+
+.curso p:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.curso p strong:nth-of-type(1){
+    text-decoration: line-through;
+}
+
+.curso p strong:nth-of-type(2){
+    font-size: 3rem;
 }
 
 .acessar-curso{
@@ -426,7 +386,6 @@ div.dropdown div.dropdown-mostrar{
     align-items: center;
     border-radius: 0.5rem;
     background: var(--cor-laranja-humanizacao);
-    font-family: bakemono-bold;
     box-shadow: 0 0.6rem 2.4rem 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
     border: none;
@@ -506,24 +465,20 @@ div.dropdown div.dropdown-mostrar{
 }
 
 .container-contatos h1{
-    font-family: bakemono-medium;
     font-size: 6rem;
     text-align: center;
     text-shadow: 0.2rem 0.2rem 2rem rgb(12, 12, 12);
 }
 
 .container-contatos h2{
-    font-family: bakemono-medium;
     font-size: 4rem;
 }
 
 .container-contatos p{
-    font-family: bakemono-medium;
     font-size: 2rem;
 }
 
 .container-contatos em{
-    font-family: bakemono-medium;
     font-size: 1.5rem;
 }
 
@@ -557,7 +512,6 @@ div.dropdown div.dropdown-mostrar{
 }
 
 .contato-button{
-    font-family: monospace;
     background-color: var(--cor-azul-tecnologia);
     color: var(--cor-branca);
     border: none;
@@ -582,7 +536,6 @@ a.contato-button:hover{
     width: 100%;
     background: var(--cor-preto);
     padding: 2rem 0;
-    font-family: bakemono-regular;
     color: var(--cor-branca);
     font-size: 1.5rem;
 }
@@ -596,10 +549,6 @@ a.contato-button:hover{
     align-items: center;
 }
 
-.rodape span{
-    font-family: manrope-light;
-}
-
 .links{
     display: flex;
     justify-content: center;
@@ -609,7 +558,6 @@ a.contato-button:hover{
 }
 
 .links a{
-    font-family: bakemono-regular;
     transition: all 0.2s;
     display: inline-block;
 }
@@ -630,10 +578,40 @@ a.contato-button:hover{
     width: 10rem;
 }
 
+.hmove{
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.hslide{
+    width: 100%;
+    flex-shrink: 0;
+    color: white;
+}
+
+.hwrap{
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    background: black;
+}
+
+/* SLIDE ANIMATION */
+@keyframes slideh {
+    0% {right: 0%}
+    33% {right: 100%}
+    66% {right: 200%}
+    100% {right: 0%}
+}
+
+.hmove {animation: slideh linear 20s infinite; }
+
 /* Rodapé - Fim */
 
 
-@media (max-width: 850px) and (min-width: 550px){
+@media (max-width: 1100px) and (min-width: 550px){
 
     .cabecalho{
         display: none;
@@ -644,8 +622,10 @@ a.contato-button:hover{
     }
 
     .container-home img, .container-sobre-mim img{
-        width: 100%;
+        width: 50%;
     }
+
+
 
 }
 

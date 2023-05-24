@@ -15,23 +15,8 @@
                 <img src="images/logo.png" alt="Logo">
             </a>
             <nav>
-                <a href=".container-home"> 
+                <a href="index.html"> 
                     Home 
-                    <span></span>
-                </a>
-                <span></span>
-                <a href=".container-sobre-mim"> 
-                    Sobre mim 
-                    <span></span>
-                </a>
-                <span></span>
-                <a href=".container-cursos"> 
-                    Cursos 
-                    <span></span>
-                </a>
-                <span></span>
-                <a href=".container-contatos"> 
-                    Contatos 
                     <span></span>
                 </a>
                 <span></span>
@@ -64,23 +49,8 @@
         </div>
         <div>
             <nav>
-                <a href=".container-home"> 
+                <a href="index.html"> 
                     Home 
-                    <span></span>
-                </a>
-                <span></span>
-                <a href=".container-sobre-mim"> 
-                    Sobre mim 
-                    <span></span>
-                </a>
-                <span></span>
-                <a href=".container-cursos"> 
-                    Cursos 
-                    <span></span>
-                </a>
-                <span></span>
-                <a href=".container-contatos"> 
-                    Contatos 
                     <span></span>
                 </a>
                 <span></span>
@@ -109,7 +79,7 @@
 
                 <form action="" method="">
                     
-                    <h2> Textboxes </h2>
+                    <h2 style="text-decoration: underline;"> Textboxes </h2>
 
                     <div>
                         <label for="name">
@@ -126,12 +96,12 @@
                         <textarea type="text" id="courses" name="courses" placeholder="Type courses here"></textarea>
                     </div> 
 
-                    <h2> Buttons, Alerts, Radio buttons, Checkboxes </h2>
+                    <h2 style="text-decoration: underline;"> Buttons, Alerts, Radio buttons, Checkboxes </h2>
 
                     <div class="buttons-alerts">
-                        <button class="button"> Button! </button>
+                        <button class="button" id="button"> Button! </button>
                         <p class="button-paragrafo">  </p>
-                        <button class="alert"> Alert! </button>
+                        <button class="alert" id="alert"> Alert! </button>
                     </div> 
 
                     <div>
@@ -139,13 +109,13 @@
                             Do you have any previous IT experience?
                         </label>
                         <div class="input-radio">
-                            <input type="radio" id="experience" name="experience" value="Yes"> Yes
+                            <input type="radio" id="yes" name="experience" value="Yes"> Yes
                         </div>
                         <div class="input-radio">
-                            <input type="radio" id="experience" name="experience" value="No"> No
+                            <input type="radio" id="no" name="experience" value="No"> No
                         </div>
                         <div class="input-radio">
-                            <input type="radio" id="experience" name="experience" value="not_applicable"> Not applicable
+                            <input type="radio" id="not_applicable" name="experience" value="not_applicable"> Not applicable
                         </div>
                     </div>
 
@@ -154,17 +124,17 @@
                             What language you like the most?
                         </label>
                         <div class="input-radio">
-                            <input type="radio" id="language" name="language" value="html"> HTML
+                            <input type="checkbox" id="language1" name="language" value="html"> HTML
                         </div>
                         <div class="input-radio">
-                            <input type="radio" id="language" name="language" value="css"> CSS
+                            <input type="checkbox" id="language2" name="language" value="css"> CSS
                         </div>
                         <div class="input-radio">
-                            <input type="radio" id="language" name="language" value="c#"> C#
+                            <input type="checkbox" id="language3" name="language" value="c#"> C#
                         </div>
                     </div>
                     
-                    <h2> Dropdown </h2>
+                    <h2 style="text-decoration: underline;"> Dropdown </h2>
 
                     <div>
                         <label for="upskill">
@@ -175,16 +145,12 @@
                     <div class="select-options">
                         <select name="upskill" id="upskill">
                             <option>-- Select --</option>
-                            <option id="c#_intermediate" value="C# Intermediate">C# Intermediate</option>
-                            <option id="c#_advanced" value="C# Advanced">C# Advanced</option>
-                            <option id="java_beginner" value="Java Beginner">Java Beginner</option>
-                            <option id="java_intermediate" value="Java Intermediate">Java Intermediate</option>
-                            <option id="java_advanced" value="Java Advanced">Java Advanced</option>
+                            <option id="opt1" value="C# Intermediate">C# Intermediate</option>
+                            <option id="opt2" value="C# Advanced">C# Advanced</option>
+                            <option id="opt3" value="Java Beginner">Java Beginner</option>
+                            <option id="opt4" value="Java Intermediate">Java Intermediate</option>
+                            <option id="opt5" value="Java Advanced">Java Advanced</option>
                         </select>
-                    </div>
-
-                    <div class="input-submit">
-                        <input type="submit" value="Enviar">
                     </div>
 
                 </form>
@@ -199,18 +165,16 @@
             </a>
             <div class="links">
                 <h1> Links </h1>
-                <a href="https://br.freepik.com/vetores-gratis/
-                grafico-3d-da-terra-que-simboliza-a-ilustracao-do-
-                comercio-global_14803715.htm#page=2&query=tecnologi&
-                position=22&from_view=search&track=sph">Imagem de 
-                liuzishan no Freepik 
+                <a href="https://www.instagram.com/upskill_it/">Follow us on Instagram
             </a>
+            <a href="https://www.facebook.com/profile.php?id=100091417824281/">Follow us on Facebook
+            </a>
+            
             </div>
-            <p> © <span> 2023 </span> UpSkill IT - Todos os direitos reservados. </p>
+            <p> © <span> 2023 </span> UpSkill IT - All rights reserved. </p>
         </div>
     </footer>
     
-
-    <script src="main.js"></script>
+    <script src="cabecalho.js"></script>
 </body>
 </html>

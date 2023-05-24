@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
     margin: 0;
@@ -12,50 +12,15 @@
 
 html{
     font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
 }
 
 html, body{
     width: 100%;
 }
 
-@font-face{
-    font-family: bakemono-bold;
-    src: url(../fonts/Bakemono-Stereo-Bold-trial_1.woff);
-}
-
-@font-face{
-    font-family: bakemono-extra-bold;
-    src: url(../fonts/Bakemono-Stereo-Extrabold-trial_1.woff);
-}
-
-@font-face{
-    font-family: bakemono-extra-light;
-    src: url(../fonts/Bakemono-Stereo-Extralight-trial.woff);
-}
-
-@font-face{
-    font-family: bakemono-light;
-    src: url(../fonts/Bakemono-Stereo-Light-trial.woff);
-}
-
-@font-face{
-    font-family: bakemono-medium;
-    src: url(../fonts/Bakemono-Stereo-Medium-trial.woff);
-}
-
-@font-face{
-    font-family: bakemono-regular;
-    src: url(../fonts/Bakemono-Stereo-Regular-trial.woff);
-}
-
-@font-face{
-    font-family: bakemono-thin;
-    src: url(../fonts/Bakemono-Stereo-Thin-trial.woff);
-}
-
-@font-face{
-    font-family: manrope-light;
-    src: url(fonts/manrope-light.woff);
+body{
+    font-size: 1.5rem;
 }
 
 :root{
@@ -65,7 +30,6 @@ html, body{
     --cor-amarelo-criatividade: #f9be40;
     --cor-branca: #fff;
     --cor-preto: black;
-    --fonte-oswald: 'Oswald', sans-serif;
 }
 
 a{
@@ -110,8 +74,6 @@ header.mostrar-cabecalho-oculto{
 
 .cabecalho>div a, .cabecalho-oculto>div a{
     font-size: 2.5rem;
-    font-family: bakemono-light;
-    /* font-family: var(--fonte-oswald); */
     transition: all 0.2s;
     display: flex;
     flex-flow: column nowrap;
@@ -199,9 +161,8 @@ header.mostrar-cabecalho-oculto{
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
-    height: 3rem;
+    height: 4rem;
     font-size: 2.5rem;
-    font-family: bakemono-light;
     position: relative;
 }
 
@@ -267,7 +228,6 @@ label{
 .formulario{
     background: rgba(0, 0, 0, 0.7);
     color: var(--cor-branca);
-    font-family: bakemono-regular;
     padding: 1.5rem;
     border-radius: 1rem;
     display: flex;
@@ -340,13 +300,8 @@ label{
     border: 0.2rem solid cyan;
 }
 
-.formulario span{
-    font-family: manrope-light;
-}
-
 .input-radio{
     font-size: 1.6rem;
-    font-family: bakemono-regular;
     display: flex;
     gap: 2rem;
 }
@@ -369,7 +324,6 @@ label{
 .input-submit input{
     padding: 1rem;
     border-radius: 1rem;
-    font-family: bakemono-regular;
     transition: all 0.2s;
     cursor: pointer;
 }
@@ -381,7 +335,6 @@ label{
 .select-options select{
     width: 18rem;
     text-align: center;
-    font-family: bakemono-regular;
     padding: 1rem;
     border-radius: 1rem;
 }
@@ -395,7 +348,6 @@ label{
     width: 100%;
     background: var(--cor-preto);
     padding: 2rem 0;
-    font-family: bakemono-regular;
     color: var(--cor-branca);
     font-size: 1.5rem;
 }
@@ -409,10 +361,6 @@ label{
     align-items: center;
 }
 
-.rodape span{
-    font-family: manrope-light;
-}
-
 .links{
     display: flex;
     justify-content: center;
@@ -422,7 +370,6 @@ label{
 }
 
 .links a{
-    font-family: bakemono-regular;
     transition: all 0.2s;
     display: inline-block;
 }
@@ -434,6 +381,8 @@ label{
 .rodape>div img{
     width: 10rem;
 }
+
+
 
 /* Rodapé - Fim */
 
