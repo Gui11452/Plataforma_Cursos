@@ -30,7 +30,7 @@
             } else{
                 $(this).removeClass("error");
                 setTimeout(function(){
-                    pMessage.innerHTML = 'New record has been successfully added to the table.';
+                    pMessage.innerHTML = 'Employee details successfully added/edited in the table.';
                 }, 3000);
             }
             });
@@ -58,7 +58,7 @@
             $(this).parents("tr").remove();
             $(".add-new").removeAttr("disabled");
             setTimeout(function(){
-                pMessage.innerHTML = 'Existing record has been successfully deleted from the table.';
+                pMessage.innerHTML = 'Employee record successfully deleted from the table';
             }, 3000)
         });
     });
