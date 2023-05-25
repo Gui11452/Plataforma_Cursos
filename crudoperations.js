@@ -29,10 +29,9 @@
                 empty = true;
             } else{
                 $(this).removeClass("error");
-                pMessage.innerHTML = 'New record has been successfully added to the table!';
                 setTimeout(function(){
-                    pMessage.innerHTML = '';
-                }, 2000);
+                    pMessage.innerHTML = 'New record has been successfully added to the table.';
+                }, 3000);
             }
             });
             $(this).parents("tr").find(".error").first().focus();
@@ -53,21 +52,14 @@
             });
             $(this).parents("tr").find(".add, .edit").toggle();
             $(".add-new").attr("disabled", "disabled");
-
-            pMessage.innerHTML = 'The record is being edited!';
-            setTimeout(function(){
-                pMessage.innerHTML = '';
-            }, 2000)
-
         });
         // Delete row on delete button click
         $(document).on("click", ".delete", function(){
             $(this).parents("tr").remove();
             $(".add-new").removeAttr("disabled");
-            pMessage.innerHTML = 'Existing record has been successfully deleted from the table!';
             setTimeout(function(){
-                pMessage.innerHTML = '';
-            }, 2000)
+                pMessage.innerHTML = 'Existing record has been successfully deleted from the table.';
+            }, 3000)
         });
     });
 
