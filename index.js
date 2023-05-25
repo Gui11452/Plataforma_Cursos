@@ -10,6 +10,8 @@
     const cabecalhoOcultoNavA = document.querySelectorAll('.cabecalho-oculto nav a');
     const [aO1, aO2, aO3, aO4, aO5] = cabecalhoOcultoNavA;
 
+    const linksA = document.querySelectorAll('.contatos a i');
+
     document.addEventListener('click', e => {
 
         const el = e.target;
@@ -25,6 +27,14 @@
                 top: to - 80,
                 behavior: 'smooth',
             })
+        }
+
+        for(let linkA of linksA){
+            if(linkA == el){
+                e.preventDefault();
+                const href = el.getAttribute('href');
+                window.open(href)
+            }
         }
     })
 
